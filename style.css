@@ -1,0 +1,76 @@
+.board { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding: 50px;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.card {
+    height: 140px;
+    width: 100px;
+    position: relative;
+
+}
+
+
+
+.front,
+.back {
+    height: 140px;
+    width: 100px;
+    border: 1px solid black;
+    backface-visibility: hidden;
+    position:absolute;
+    transition: transform .25s;
+}
+
+
+  
+.card.flip .front {
+    transform: rotateY(0);
+  }
+  
+ .card.flip .back { 
+    transform: rotateY(180deg);
+  }
+.card .front{
+    transform: rotateY(180deg);
+}
+
+button{
+    position:absolute;
+    width: 100px;
+    top:400px;
+    right:500px;
+    border: solid;
+    border-radius: 20px;
+}
+
+.timer{
+    position:absolute;
+    text-align: center;
+    top:270px;
+    width: 100px;
+    right:500px;
+    border: solid;
+    border-radius: 20px;
+}
+
+.tries{
+    position:absolute;
+    text-align: center;
+    top:335px;
+    width: 100px;
+    right:500px;
+    border: solid;
+    border-radius: 20px;
+}
+
+
+
